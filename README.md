@@ -173,3 +173,93 @@ Also contains:
 %=
 */
 ```
+
+## DEFINING FUNCTIONS
+```php
+<?php
+function teste(){
+    echo "Hello World";
+}
+
+teste(); // prints: Hello World
+```
+
+### RETURN STATEMENTS
+```php
+function getString(){
+    return "Ola";
+}
+
+$str = getString();
+echo $str; // prints: Ola
+
+function zero(){
+    return 0;
+}
+echo zero() + 1; // prints: 1
+```
+
+### RETURNING NULL VALUE
+```php
+function returnNull(){
+    echo "seila";
+    // there is not return inside this function
+}
+$var = returnNull();
+echo $var; // nothing is printed
+```
+
+### PARAMETERS
+```php
+function printString($string){
+    echo $string;
+}
+printString("Hello World");
+
+function sum($x, $y){
+    return $x + $y;
+}
+```
+
+### DEFAULT PARAMETERS
+```php
+function printName($name = "John Doe"){
+    echo $name;
+}
+
+printName(); // prints: John Doe
+printName("Seila"); // prints: Seila
+```
+
+### PASS BY REFERENCE
+```php
+function addDot(&$str){
+    $str .= ".";
+}
+$word = "Hello";
+addDot($word);
+echo $word; // prints: Hello.
+```
+
+## VARIABLE SCOPE (GLOBAL VARIABLES)
+```php
+$x = 10;
+function sum($y){
+    global $x;
+    return $x + $y;
+}
+```
+
+## CONDITIONAL AND LOGIC
+```php
+<?php
+$bool = TRUE; //OR FALSE
+if($bool)
+{
+    echo "IS TRUE";
+}
+else
+{
+    echo "IS FALSE";
+}
+```
