@@ -250,6 +250,57 @@ function sum($y){
 }
 ```
 
+## GET VARIABLES TYPE
+```php
+$str = "ola";
+$num = 10;
+
+echo gettype($str); // prints: string
+echo gettype($num); // prints: integer
+```
+
+## VAR_DUMP FUNCTION
+```php
+$str = "ola";
+$num = 100;
+echo var_dump($str); // prints: string(3) "ola"
+echo var_dump($num); // prints: int(100)
+```
+
+## STRING FUNCTIONS
+```php
+echo strrev("hello"); // prints: olleh
+
+echo strtolower("heLLo"); // prints: hello
+
+echo str_repeat("hi ", 3); // prints hi hi hi 
+
+echo str_pad("hi", 8, "-", STR_PAD_BOTH); // prints: ---hi---
+```
+
+## WORKING WITH SUBSTRINGS
+```php
+$str = "hi hi hi";
+echo substr_count($str, "hi"); // prints: 3
+```
+
+## NUMBER FUNCTIONS
+```php
+echo abs(-2); // prints: 2
+
+echo round(999.1) // prints: 999
+echo round(999.9) // prints: 1000
+```
+
+## RANDOM NUMBERS
+```php
+echo getrandmax(); // prints: the maximun random number possible
+
+echo rand(1, 2); // prints: 1 or 2
+echo rand(5, 10); // prints: a number between 5 or 10, including 5 and 10
+echo rand(1, 100); // prints: a number between 1 and 100, including 1 and 100
+```
+
 ## CONDITIONAL AND LOGIC
 ```php
 <?php
