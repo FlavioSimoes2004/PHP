@@ -6,7 +6,9 @@
         <title>Document</title>
     </head>
     <body>
+        <h1>PHP page</h1>
         <?php
-        echo '<p>Hello World</p>';
+            echo "Hello World";
+        ?>
     </body>
 </html>
