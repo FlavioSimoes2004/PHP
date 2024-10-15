@@ -303,7 +303,6 @@ echo rand(1, 100); // prints: a number between 1 and 100, including 1 and 100
 
 ## CONDITIONAL AND LOGIC
 ```php
-<?php
 $bool = TRUE; //OR FALSE
 if($bool)
 {
